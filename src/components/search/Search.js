@@ -1,10 +1,14 @@
 import React from "react";
-import "./search.css";
 
-const Search = () => {
+const Search = ({ inputValue, onInputChange }) => {
   return (
-    <div>
-      <h1>hello world</h1>
+    <div className="--form-control">
+      <input
+        type="text"
+        placeholder="Search..."
+        value={inputValue}
+        onChange={onInputChange}
+      />
     </div>
   );
 };
